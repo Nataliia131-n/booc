@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOCTYPE html> 
 <html lang="uk">
 <head>
     <meta charset="UTF-8">
@@ -16,6 +16,7 @@
             align-items: center;
             color: #8b004c;
             background: linear-gradient(to bottom right, #e7b6d9, #d674c6);
+            position: relative;
         }
         .slide h1 {
             font-size: 3em;
@@ -38,8 +39,13 @@
         .slide2 {
             height: 100vh;
             background: linear-gradient(to bottom, #fbe6fa, #e078cf);
-            padding: 60px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
             color: #8b004c;
+        }
+        .content-container {
+            text-align: center;
         }
         .slide2 h1 {
             font-size: 3em;
@@ -49,11 +55,13 @@
             background-color: #fcdaf6;
             border: 1px solid #d55cb8;
             padding: 20px;
-            width: fit-content;
+            display: inline-block;
+            text-align: left;
             font-size: 1.2em;
         }
         .content-list ul {
             padding-left: 20px;
+            margin: 0;
         }
         .content-list li {
             margin-bottom: 10px;
@@ -61,6 +69,21 @@
         .content-list a {
             text-decoration: none;
             color: #8b004c;
+        }
+        .intro-section {
+            padding: 60px;
+            text-align: center;
+            background-color: #fff0fa;
+            color: #8b004c;
+        }
+        .intro-section h2 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+        .intro-section p {
+            font-size: 1.3em;
+            max-width: 800px;
+            margin: 0 auto;
         }
     </style>
 </head>
@@ -81,33 +104,36 @@
 
     <!-- Слайд 2 -->
     <div class="slide2">
-        <h1>Зміст</h1>
-        <div class="content-list">
-            <ul>
-                <li><a href="#">Вступ</a></li>
-                <li><a href="#">Множення натуральних чисел</a></li>
-                <li><a href="#">Переставний закон множення</a></li>
-                <li><a href="#">Сполучний закон множення</a></li>
-                <li><a href="#">Спрощення буквених виразів</a></li>
-                <li><a href="#">Основні задачі на множення</a></li>
-                <li><a href="#">Дія ділення та її компоненти</a></li>
-                <li><a href="#">Особливі випадки ділення</a></li>
-                <li><a href="#">Основні задачі на ділення</a></li>
-                <li><a href="#">Інтерактивні завдання до теми</a></li>
-                <li><a href="#">Глосарій</a></li>
-                <li><a href="#">Список використаної літератури</a></li>
-            </ul>
+        <div class="content-container">
+            <h1>Зміст</h1>
+            <div class="content-list">
+                <ul>
+                    <li><a href="#">Вступ</a></li>
+                    <li><a href="#">Множення натуральних чисел</a></li>
+                    <li><a href="#">Переставний закон множення</a></li>
+                    <li><a href="#">Сполучний закон множення</a></li>
+                    <li><a href="#">Спрощення буквених виразів</a></li>
+                    <li><a href="#">Основні задачі на множення</a></li>
+                    <li><a href="#">Дія ділення та її компоненти</a></li>
+                    <li><a href="#">Особливі випадки ділення</a></li>
+                    <li><a href="#">Основні задачі на ділення</a></li>
+                    <li><a href="#">Інтерактивні завдання до теми</a></li>
+                    <li><a href="#">Глосарій</a></li>
+                    <li><a href="#">Список використаної літератури</a></li>
+                </ul>
+            </div>
         </div>
     </div>
-<!-- Вступ -->
-<div class="intro-section">
-    <h2>Вступ</h2>
-    <p>
-        Множення і ділення натуральних чисел – це одні з основних математичних операцій, які ми використовуємо у повсякденному житті.
-        Ти побачиш, як легко помножити і поділити натуральні числа, навчишся швидко виконати обчислення та розв’язати цікаві завдання.
-        Разом ми зробимо математику простою та захопливою!
-    </p>
-</div>
+
+    <!-- Вступ -->
+    <div class="intro-section">
+        <h2>Вступ</h2>
+        <p>
+            Множення і ділення натуральних чисел – це одні з основних математичних операцій, які ми використовуємо у повсякденному житті.
+            Ти побачиш, як легко помножити і поділити натуральні числа, навчишся швидко виконати обчислення та розв’язати цікаві завдання.
+            Разом ми зробимо математику простою та захопливою!
+        </p>
+    </div>
   
 </body>
 </html>
